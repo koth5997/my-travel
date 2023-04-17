@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>20201548 고태희 웹프로그래밍 과제</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="https://user-images.githubusercontent.com/127705834/227777971-bc9a2937-998c-413e-99aa-9bdbc50c86bd.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>20201548 고태희 </b></h4>
+    <p class="w3-text-grey">웹프로그래밍 과제</p>
+    <p class="w3-justify"><a href="homework1.php">homework1.php</a><p>
+    <p class="w3-justify"><a href="homework2.html">homework2.html</a><p></p>
+    <p class="w3-justify"><a href="homework3.php">homework2.php</a><p></p>
+    <p class="w3-justify"><a href="homework4.php">homework4.php</a><p></p>
+    <p class="w3-justify"><a href="calendar.php">calendar.php</a><p></p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>여행지</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>일본간 이유</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>koth5997@gmail.com</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>22년 10월 일본여행</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">필터:</span> 
+      <button class="w3-button w3-black">모두</button>
+      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>디자인</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>사진</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>그림</button>
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://user-images.githubusercontent.com/127705834/227778683-cd88dd54-c362-44f6-80d3-44742b1637ba.jpg" alt="청수사" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>교토 청수사</b></p>
+        <p>일본여행 첫번째는 호텔에서 버스타고 내려서 산을 올라 도착한 곳이다. 778년에 최초로 지어졌으며 건물도 멋있지만 풍경도 좋고 내려가다보면 전통 건축물거리가 있어서 좋다.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://user-images.githubusercontent.com/127705834/227779097-4d7adffc-7ddd-4929-91ac-c87330e75af1.jpg" alt="후시미 이나리" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>후시미 이나리 신사</b></p>
+        <p>두번째는 후시미 이나리 신사이다. 이 장소는 8세기 초에 지어졌다고 하며 지하철 타고 쭉 산에 올라가서 돌아다닌 곳이고 힘들지만 이색적인 분위기가 좋다.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="https://user-images.githubusercontent.com/127705834/227779144-0656e113-5111-40d7-b8f8-b38f4a399306.jpg" alt="교토 소바집" style="width:100%" height="550px" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>교토 가와미치야</b></p>
+        <p>세번째는 가와미치야라는 곳이다. 이장소는 300년된 소바집이다. 오픈하자마자 간거같은데 사람들이 많아 기다려야했고 엄청 오래된 집이지만 가격이 생각보다 비싸지 않았고 300년된 집이라 그런지 맛또한 훌룡하다.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://user-images.githubusercontent.com/127705834/227779205-38eb0454-fab3-4bea-b3ac-b12ed68c3844.jpg" alt="오사카 우메다" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>오사카 우메다 햅파이브</b></p>
+        <p>네번째는 오사카 우메다의 햅파이브 관람차다. 사람이 좀 많아서 기다리기는 했지만 가격은 인당 6500원 정도이다. 사진과 같이 우메다 지역을 다 볼수 있어 야경이 멋있다.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://user-images.githubusercontent.com/127705834/227779255-7993cec0-c418-4278-ae9d-c7c8173f08b5.jpg" alt="오사카 난바" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>오사카 난바</b></p>
+        <p>다섯번째는 오사카 난바이다. 내가 생각하기에는 오사카하면 유니버셜스튜디오 다음 난바지역이 생각나는것 같다. 한국인들 엄청많고 그냥 사람이 엄청많다. 먹을곳도 많아 힘들긴하지만 돌아다니면서 쇼핑하고 먹기에는 좋은 곳이다.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="https://user-images.githubusercontent.com/127705834/227779315-accda109-b5db-4121-bd49-79ee3fbf2629.jpg" alt="유니버셜스튜디오" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>오사카 유니버셜 스튜디오</b></p>
+        <p>여섯번째는 오사카하면 빼놓을수 없는 유니버셜 스튜디오이다. 규모도 크고 큰만큼 재미있는 놀이기구도 많지만 그만큼 사람이 많아서 엄청기다려야했고 그냥 티켓에 패스 티켓을 샀더니 24만원정도 들었다, 가격이 비싸지만 눈감고 한번은 충분히 올만한 곳같다. </p>
+      </div>
+    </div>
+  </div>
+  <!-- 세번째 Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://user-images.githubusercontent.com/127705834/227779371-4bedb4c9-cdee-4fd5-9492-bf67a6de5038.jpg" alt="도쿄역" style="width:100%"  height="550px"class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>도쿄역</b></p>
+        <p>일곱번째는 도쿄역이다. 도쿄역에 내린김에 찍었고 비가 많이와서 막 돌아다니지는 못해서 아쉬웠지만 충분이 주변건물이랑 도쿄역만 봐도 멋있다고 생각했다.  </p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://user-images.githubusercontent.com/127705834/227779401-8e7d0b67-f984-4648-b992-b394f35f37e7.jpg" alt="도쿄타워" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>도쿄타워</b></p>
+        <p>여덟번째는 도쿄 미나토구의 도쿄타워이다. 도쿄이면 생각나는 곳이기도 하지만 이날은 비가 너무 많이와서 많이 돌아다니지못해 호텔에서 가까워서 빠르게 사진만 찍고 왔다. 날씨가 좋았으면 더 멋있을 것같은 아쉬움이 들었다.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="https://user-images.githubusercontent.com/127705834/227779442-ddbd0346-7007-4603-a733-e796ae9dff26.jpg" alt="도쿄 긴자" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>도쿄 긴자</b></p>
+        <p>아홉번째는 도쿄 긴자이다. 이지역은 명품으로 유명한 곳이다. 비가 좀그쳐서 시간이 아까워 좀 돌아다니기로 했다. 명품거리 답게 건물들이 화려했으며 이름은 모르지만 가격이 비싸고 유명한 고급브랜드가 엄청 많이 있었다.  </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- four Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://user-images.githubusercontent.com/127705834/227780427-3544d512-114f-4aa4-a975-85bbe146feb2.jpg" alt="센소지" style="width:100%"  height="550px"class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>도쿄 센소지</b></p>
+        <p>열번째는 도쿄에서 가장오래된 사원으로 645년에 완공되었다고한다. 이날도 날씨가 흐리고 비도 조금씩 왔지만 그래도 도쿄 유명관광지라 사람들이 엄청많았고 관광상품 파는 거리가 길게 이어졌으며 근처에 시장도있어서 근처에서 밥먹고 돌아다니기 좋았다.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://user-images.githubusercontent.com/127705834/227780605-5e8082cf-7e99-4ea2-b91d-ea5afad25ea2.jpg" alt="아키하바라" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>도쿄 아키하바라 </b></p>
+        <p>열한번째는 도쿄 아키하바라이다. 이곳은 전자상가와 애니매이션관련해서 유명한데 애니매이션관련된 곳보다는 전자제품관련 상점을 더 많이 간것같다. 전자상가에서는 한국에서 안파는 아날로그제품들이 많았고 확실히 다른 곳보다는 분위기가 달랐던것 같다.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="https://user-images.githubusercontent.com/127705834/227780913-5c5e9c9c-6772-4274-9c0b-6865345b9731.jpg" alt="도쿄 스카이트리" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>도쿄 스카이트리</b></p>
+        <p>마지막은 도쿄 스카이트리. 마지막으로 도쿄에서 제일 높은 건물인 도쿄 스카이트리를 갔다. 올라가는데 엘리베이터가 빨라서 생각보다 얼마 안걸렸고 해가지기전 부터와서 야경볼려고 1시간은 더 꼭대기 층에서 기다렸던것같다. 하지만 밤이되니 야경이 엄청 좋아서 기다린 값을 한것같았다.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m6">
+      <img src="https://user-images.githubusercontent.com/127705834/227777971-bc9a2937-998c-413e-99aa-9bdbc50c86bd.jpg" alt="Me" style="width:20%">
+    </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>일본간 이유</b></h4>    <p>전역하고 나서 얼마후 10월달에만 2번 총 10일을 일본여행을 갔는데 첫번째는 오사카, 교토를 군대에 친했던 친구들하고 갔고 두 번째는 도쿄를 갔고 도쿄는 오랫동안 할고 지낸 친한친구들하고 갔다. 2번가는대에 돈이 좀 많이들었지만 그 값어치는 한것같고 너무 재밋게 놀아서 
+    돈이 아깝다는 생각은 들지 않았다. 나중에도 일본말고도 친구들하고 다른 곳도 자유여행식으로 가도 좋았다고 생각을 했고 위에 사진들외에도 다른 곳들도 많이 갔지만 가장 괜찮았던곳만 몇개 뽑아서 소개를 하였다.  </p>
+    <hr>
+    
+    <h4>여행 만족도</h4>
+    <!-- Progress bars / Skills -->
+    <p>교통</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:90%">90%</div>
+    </div>
+    <p>음식</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:92%">92%</div>
+    </div>
+    <p>호텔가격</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:77%">77%</div>
+    </div>
+    <p>
+      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+        <i class="fa fa-download w3-margin-right"></i>다운로드
+      </button>
+    </p>
+    <hr>
+    
+    <h4>4박5일 기준 비용별 추천</h4>
+    <!-- Pricing Tables -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">가성비</li>
+          <li class="w3-padding-16">숙소: 1박에 7만원도 있고 그 이하도 있음</li>
+          <li class="w3-padding-16">먹거리: 참치,와규등 비싼거 먹지만 않으면 물가가 한국에비해 비싸지 않아 충분이 가성비있게 먹을수있음</li>
+          <li class="w3-padding-16">교통: 지하철이 엄청 잘되있어 교통패스권만 구매해도 가성비 있게 돌아다닐 수 있음</li>
+          <li class="w3-padding-16">기념품: 돈키호테라는 면세점이있는데 그 곳에서 사면 충분히 다양한 것들을 괜찮은 가격에 살수 있음</li>
+          <li class="w3-padding-16">
+            <h2>80만원~90만원</h2>
+            <span class="w3-opacity">비행기 값까지 포함된 가격</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">가성비</button>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-teal w3-xlarge w3-padding-32">여유</li>
+          <li class="w3-padding-16">숙소:1박에 10만원에서 25만원사이 추천</li>
+          <li class="w3-padding-16">먹거리:돈적 여유가 있기때문에 참치나 와규등 한번 먹어보는걸 추천.</li>
+          <li class="w3-padding-16">교통: 우리나라보단 교통비 비싸지만 교통패스가 있다면 걱정안해도 된다.</li>
+          <li class="w3-padding-16">기념품: 돈키호테뿐만아니라 길가에 쇼핑몰이나 좋은데 많아서 몇개 사도 될것같다.</li>
+          <li class="w3-padding-16">
+            <h2>100만원~ 150만원</h2>
+            <span class="w3-opacity">비행기 값까지 포함된 가격</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">여유</button>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-third">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">프리미엄</li>
+          <li class="w3-padding-16">숙소: 고급진곳을 찾으면 엄청많음 50만원부터 몇백까지 다양함.</li>
+          <li class="w3-padding-16">먹거리: 와규나 참치 뿐만아니라 특히 도쿄에 고급진 오마카세하는 곳이 많으니 그곳에서도 한번 먹는것을 추천한다.</li>
+          <li class="w3-padding-16">교통: 택시값이 우리나라보다 훨씬 비싸지만 여유자금이 많기에 그런거 신경쓰지않아도 된다. 그냥 편한거 타는걸 추천한다.</li>
+          <li class="w3-padding-16">기념품: 고급진 기념품들은 도쿄의 긴자나 다른 유명한 거리에도 고급진 것을 많이 팔기때문에 마음에드는거 구매하면 될것 같다.</li>
+          <li class="w3-padding-16">
+            <h2>200만원 부터</h2>
+            <span class="w3-opacity">비행기 값까지 포함된 가격</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">프리미엄</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>연락처</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>koth5997@gmail.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>대한민국</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>010-xxxx-xxxx</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>이름</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>이메일</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>하고싶은 말</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>보내기</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>개요</h3>
+      <p>웹프로그래밍 과제고 내가 여행갔던 것을 소개하고자 만듬</p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css참고</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>다른 포스트</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="https://user-images.githubusercontent.com/127705834/227783640-59567f26-0824-4f35-8461-c1aac2d270b7.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">대만</span><br>
+          <span>대만 여행기</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="https://user-images.githubusercontent.com/127705834/227783763-260fe521-a815-41b4-a55b-1ea155ca1fe6.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">이탈리아</span><br>
+          <span>이탈리아 여행기</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3>유명태그</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">#여행</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">#일본</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">#도쿄</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">#오사카</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">#교토</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">#관광지</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">#먹거리</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">#기념품</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">#가족여행</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">#대만</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">#타이페이</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">#이탈리아</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">#콜로세움</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">#가성비</span>
+      </p>
+    </div>
+
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
