@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>입장권 판매기</title>
+</head>
+<style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    </style>
+
+<body>
+	<h1>입장권 판매기</h1>
+	<form method="post" action="process.php">
+		<label for="name">고객성명:</label>
+		<input type="text" id="name" name="name"><br><br>
+		<table>
+			<thead>
+				<tr>
+					<th>No</th>
+					<th>구분</th>
+					<th colspan="2">어린이</th>
+					<th colspan="2">어른</th>
+					<th>비고</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>입장권</td>
+                    <td>7000</td>
+					<td><input type="number" name="ticket1_child"></td>
+                    <td>10000</td>
+					<td><input type="number" name="ticket1_adult"></td>
+					<td>입장</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>BIG3</td>
+                    <td>12000</td>
+					<td><input type="number" name="ticket2_child"></td>
+                    <td>16000</td>
+					<td><input type="number" name="ticket2_adult"></td>
+					<td>입장+놀이3종</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>자유이용권</td>
+                    <td>12000</td>
+					<td><input type="number" name="ticket3_child"></td>
+                    <td>16000</td>
+					<td><input type="number" name="ticket3_adult"></td>
+					<td>입장+놀이자유</td>
+				</tr>
+                <tr>
+					<td>4</td>
+					<td>연간이용권</td>
+                    <td>70000</td>
+					<td><input type="number" name="ticket2_child"></td>
+                    <td>90000</td>
+					<td><input type="number" name="ticket2_adult"></td>
+					<td>입장+놀이자유</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<input type="submit" value="합계">
+	</form>
+	<?php
+	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+		$name = $_POST['name'];
+		$ticket1_child = $_POST['ticket1_child'];
+		$ticket1_adult = $_POST['ticket1_adult'];
+		$ticket2_child = $_POST['ticket2_child'];
+		$ticket2_adult = $_POST['ticket2_adult'];
+		$ticket3_child = $_POST['ticket3_child'];
+		$ticket3_adult = $_POST['ticket3_adult'];
+		echo date('Y-m-d H:i:s') . '<br>';
+		echo $name . ' 고객님 감사합니다.<br>';
+		echo '어린이 입장권: ' . $ticket1_child . '장<br>';
+		echo '어른 입장권: ' . $ticket1_adult . '장<br>';
+		echo '어린이 BIG3: ' . $ticket2_child . '장<br>';
+		echo '어른 BIG3: ' . $ticket2_adult . '장<br>';
+		echo '어린이 자유이용권: ' . $ticket3_child . '장<br>';
+		echo '어른 자유이용권: ' . $ticket3_adult . '장<br>';
+	}
+	?>
+
+</body>
+</html>
+
