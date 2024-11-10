@@ -1,0 +1,38 @@
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+.w3-content {
+    max-width: 1600px;
+}
+
+
+.sidebar-img {
+    width: 45%;
+    border-radius: 50%;
+}
+
+.w3-row-padding img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+
+.w3-pagination .w3-button {
+    padding: 10px;
+}
+
+.w3-container .w3-dark-grey {
+    text-align: center;
+}
+
+
+.w3-ul.w3-hover-opacity-off li {
+    transition: all 0.3s;
+}
+
+.w3-ul.w3-hover-opacity-off li:hover {
+    opacity: 0.8;
+}
